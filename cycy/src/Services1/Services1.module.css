@@ -1,0 +1,107 @@
+.container {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    border: 1px solid #000;
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #000;
+    padding-bottom: 10px;
+  }
+  
+  .headerLeft, .headerRight {
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .headerCenter {
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
+  .headerCenter h3 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .contactInfo {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 20px;
+  }
+  
+  .formTitle {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  
+  form {
+    margin-top: 20px;
+  }
+  
+  label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    width: 100%;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="file"]{
+    border: none;
+    border-bottom: 3px solid black;
+    outline: none;
+    width: 100%;
+    padding: 3px;
+    margin-bottom: 15px;
+    
+  }
+  
+  .radio-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .radio-group label {
+    margin-right: 20px;
+    font-weight: normal;
+  }
+  
+  .radio-group input[type="radio"] {
+    margin-right: 5px;
+  }
+  
+  .piecesTitle {
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  
+  .documentList {
+    margin-top: 10px;
+    padding-left: 20px;
+  }
+  
+  .documentList li {
+    margin-bottom: 10px;
+  }
+  
+  .dropdown {
+    margin-bottom: 15px;
+  }
+  
+  .file-upload {
+    margin-bottom: 15px;
+  }
+  
+  

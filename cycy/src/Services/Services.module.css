@@ -1,0 +1,94 @@
+/* Base Link Style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.link {
+    color: #007bff;                /* Primary text color */
+    text-decoration: none;         /* Remove underline */
+    font-size: 16px;               /* Font size */
+    padding: 12px 20px;            /* Space around the text */
+    border-radius: 8px;           /* Rounded corners */
+    background-color: #f8f9fa;    /* Light background color */
+    display: inline-block;        /* Ensure padding and background are applied */
+    font-weight: 500;             /* Medium font weight */
+    position: relative;           /* For positioning pseudo-elements */
+    overflow: hidden;             /* Hide overflow of pseudo-elements */
+    transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+  }
+  
+  /* Hover Effect */
+  .link:hover {
+    color: #ffffff;                /* Text color on hover */
+    background-color: #007bff;    /* Background color on hover */
+    transform: translateY(-4px);  /* Lift the link slightly on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+  }
+  
+  /* Focus Effect */
+  .link:focus {
+    outline: 2px solid #007bff;    /* Outline for accessibility */
+    outline-offset: 2px;           /* Offset the outline */
+    background-color: #e9ecef;     /* Slightly different background color */
+  }
+  
+  /* Active Effect */
+  .link:active {
+    background-color: #0056b3;    /* Darker background when clicked */
+    transform: translateY(0);     /* Remove lift effect on click */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adjust shadow on click */
+  }
+  
+  /* Visited Link */
+  .link:visited {
+    color: #6c757d;               /* Color for visited links */
+  }
+  
+  /* Animated Underline Effect */
+  .link::after {
+    content: '';                   /* Empty content for pseudo-element */
+    position: absolute;            /* Absolute positioning */
+    bottom: 0;                     /* Align at the bottom of the link */
+    left: 0;                       /* Align to the left */
+    height: 2px;                   /* Thickness of the underline */
+    width: 0;                      /* Start width at 0 */
+    background-color: #007bff;    /* Color of the underline */
+    transition: width 0.3s ease;   /* Smooth transition for width */
+  }
+  
+  /* Hover Underline Animation */
+  .link:hover::after {
+    width: 100%;                   /* Expand underline on hover */
+  }
+  
+  /* Ripple Effect */
+  .link::before {
+    content: '';                   /* Empty content for pseudo-element */
+    position: absolute;            /* Absolute positioning */
+    top: 50%;                      /* Center vertically */
+    left: 50%;                     /* Center horizontally */
+    width: 300%;                   /* Large size for ripple effect */
+    height: 300%;                  /* Large size for ripple effect */
+    background: rgba(0, 123, 255, 0.2); /* Light color for ripple */
+    border-radius: 50%;            /* Circular shape */
+    transform: translate(-50%, -50%) scale(0); /* Center and start at scale 0 */
+    transition: transform 0.6s ease-out; /* Smooth scaling transition */
+    z-index: -1;                   /* Behind the link */
+  }
+  
+  /* Hover Ripple Effect */
+  .link:hover::before {
+    transform: translate(-50%, -50%) scale(1); /* Scale up on hover */
+  }
+  
+  h2 {
+    font-size: 2rem;                  /* Font size */
+    font-weight: 700;                 /* Bold text */
+    color: #333;                      /* Dark grey color for text */
+    margin: 0;                        /* Remove default margin */
+    padding: 0.5rem 0;                /* Padding for top and bottom */
+    position: relative;               /* Position relative for pseudo-elements */
+    text-align: center;               /* Center-align the text */
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition for color and transform */
+  }
